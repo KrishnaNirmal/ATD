@@ -19,6 +19,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { DashboardComponent } from './componenets/dashboard/dashboard.component';
 
 
 const MaterialModule = [MatInputModule,
@@ -34,7 +35,8 @@ const MaterialModule = [MatInputModule,
     AppComponent,
     AtdVisualizationComponent,
     AtdSvgComponent,
-    AtdChartComponent
+    AtdChartComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
