@@ -18,7 +18,6 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
-import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { DashboardComponent } from './componenets/dashboard/dashboard.component';
 
 
@@ -46,7 +45,6 @@ const MaterialModule = [MatInputModule,
     CanvasJSAngularChartsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    NgxMaterialTimepickerModule,
     FormsModule,
     
     
