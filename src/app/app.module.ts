@@ -13,6 +13,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { AtdSvgComponent } from './componenets/atd-svg/atd-svg.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
+import { AtdChartComponent } from './componenets/atd-chart/atd-chart.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule } from '@angular/forms';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 
 const MaterialModule = [MatInputModule,
@@ -27,13 +33,21 @@ const MaterialModule = [MatInputModule,
   declarations: [
     AppComponent,
     AtdVisualizationComponent,
-    AtdSvgComponent
+    AtdSvgComponent,
+    AtdChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ...MaterialModule
+    ...MaterialModule,
+    CanvasJSAngularChartsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    NgxMaterialTimepickerModule,
+    FormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
