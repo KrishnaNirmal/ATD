@@ -1,0 +1,71 @@
+.date-time-picker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .date-time-picker mat-form-field {
+    width: 300px;
+  }
+  
+  .date-time-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .time-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .mat-datepicker-content {
+    max-height: 300px !important;
+    min-height: 250px !important;
+  }
+  
+  .mat-calendar {
+    padding: 4px !important;
+  }
+  
+  .mat-calendar-body-cell-content {
+    width: 32px !important;  
+    height: 32px !important;
+    line-height: 32px !important;
+    font-size: 14px !important; 
+  }
+  
+  .mat-calendar-header {
+    min-height: 30px !important;
+    font-size: 14px !important;
+  }
+  
+  .mat-calendar-period-button {
+    font-size: 14px !important;
+    padding: 4px !important;
+  }
+  
+  .mat-form-field-wrapper {
+    padding-bottom: 2px !important;
+  }
+  
+  .mat-form-field-infix {
+    min-height: 36px !important;  
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    height: 36px !important;
+  }
+  
+  .update-chart-button {
+    margin-left: auto;
+  }
+  

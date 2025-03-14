@@ -1,0 +1,34 @@
+<mat-card class="atd-container">
+    <mat-form-field appearance="outline" [formGroup]="sensorForm">
+      <mat-label>Enter Sensor States</mat-label>
+      <input
+        matInput
+        type="text"
+        maxlength="9"
+        placeholder="GGGGGRYRG"
+        formControlName="inputString"
+        #sensorInput
+      />
+      
+      <!-- Show error message if invalid -->
+      <mat-error *ngIf="sensorForm.get('inputString')?.invalid && sensorForm.get('inputString')?.touched">
+        <small *ngIf="sensorForm.get('inputString')?.errors?.['required']">Input is required.</small>
+        <small *ngIf="sensorForm.get('inputString')?.errors?.['pattern']">Only G, R, and Y allowed (exactly 9 characters).</small>
+      </mat-error>
+    </mat-form-field>
+    <button
+    mat-raised-button
+    color="primary"
+    (click)="updateSensorStatus(sensorInput.value)"
+    [disabled]="sensorForm.invalid"
+  >
+    Update Sensors
+  </button>
+  </mat-card>
+
+  <mat-card class="atd-svg-container">
+    <div [@rotateOnVerticalAxis]="currentState">
+      <app-atd-svg [sensors]="sensors" [sensorColors]="sensorColors"></app-atd-svg>
+    </div>
+    <button mat-raised-button color="primary" class="icon_button" (click)="toggleRotation()"><mat-icon>rotate_right</mat-icon></button>
+  </mat-card>
