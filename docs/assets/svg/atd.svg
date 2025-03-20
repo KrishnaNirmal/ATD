@@ -1,0 +1,12 @@
+<svg width="600" height="750" viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head -->
+  <circle cx="300" cy="75" r="45" stroke="black" fill="none" stroke-width="3"/>
+  
+  <!-- Body Structure -->
+  <line x1="300" y1="120" x2="300" y2="300" stroke="black" stroke-width="3"/>  <!-- Neck to Torso -->
+  <line x1="225" y1="180" x2="375" y2="180" stroke="black" stroke-width="3"/>  <!-- Shoulders -->
+  <line x1="225" y1="180" x2="150" y2="90" stroke="black" stroke-width="3"/>   <!-- Left Arm Up -->
+  <line x1="375" y1="180" x2="450" y2="90" stroke="black" stroke-width="3"/>   <!-- Right Arm Up -->
+  <line x1="300" y1="300" x2="225" y2="525" stroke="black" stroke-width="3"/>  <!-- Left Leg -->
+  <line x1="300" y1="300" x2="375" y2="525" stroke="black" stroke-width="3"/>  <!-- Right Leg -->
+</svg>
